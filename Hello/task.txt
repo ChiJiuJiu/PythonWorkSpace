@@ -1,0 +1,11 @@
+xiaozhao1:my name's xiaozhao1
+xiaozhao2:hello, xiaozhao1
+xiaozhao2:my name is xiaozhao2
+=================================
+xiaozhao1:today is Thursday
+xiaozhao2:yeap
+=================================
+xiaozhao2:how do you feel?
+xiaozhao1:good
+xiaozhao1:thanks, what about you?
+xiaozhao2:awesome
