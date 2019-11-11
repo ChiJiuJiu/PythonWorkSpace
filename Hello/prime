@@ -1,0 +1,23 @@
+def getReverse(num):
+    n = list(str(num))
+    n.reverse()
+    return int("".join(n))
+
+def isPrime(num):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                return False
+        else:
+            return True
+    else:
+        return False
+
+def judge(num):
+    result = isPrime(getReverse(num))
+    if result == True:
+        print("yes")
+    else:
+        print("no")
+
+judge(input())
