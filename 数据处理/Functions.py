@@ -19,12 +19,32 @@ def getDev(dev_list):
         return '其他'
     return dev_list[0]
 
-def cast(data,indicator):
+def cast_type(data,indicator):
     cnt = 0
     to_copy = []
     for i in data[indicator]:
         indicator_list = i.split(',')
         to_copy.append(getTypes(indicator_list))
+        cnt += 1
+    # 替换列的类型为Series
+    return pd.Series(to_copy)
+
+def cast_dev(data, indicator):
+    cnt = 0
+    to_copy = []
+    for i in data[indicator]:
+        indicator_list = i.split(',')
+        to_copy.append(indicator_list[0])
+        cnt += 1
+    # 替换列的类型为Series
+    return pd.Series(to_copy)
+
+def cast_publisher(data, indicator):
+    cnt = 0
+    to_copy = []
+    for i in data[indicator]:
+        indicator_list = i.split(',')
+        to_copy.append(indicator_list[0])
         cnt += 1
     # 替换列的类型为Series
     return pd.Series(to_copy)
